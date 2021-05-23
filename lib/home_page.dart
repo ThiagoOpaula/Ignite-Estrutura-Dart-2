@@ -44,6 +44,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        tooltip: "adicionar nova nota",
         child: Icon(Icons.add),
         onPressed: () async {
           var description = await Navigator.pushNamed(context, "/create-note");
@@ -54,6 +55,7 @@ class _HomePageState extends State<HomePage> {
           }
         },
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
